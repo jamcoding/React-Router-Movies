@@ -19,7 +19,7 @@ const App = () => {
         exact
         path="/movies/:id" 
         render={props => 
-          <Movie {...props} />
+          <Movie {...props} addToSavedList={addToSavedList} />
         }
       />
     </div>
